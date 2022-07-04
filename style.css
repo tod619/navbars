@@ -118,3 +118,56 @@ nav ul a {
 }
 
 /* End: Nav with Icons */
+
+/* Start: Menu with Dropdown Children */
+.dropdown ul {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown ul {
+    flex-direction: row;
+  }
+}
+
+.dropdown ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown ul li ul {
+  display: none;
+}
+
+.dropdown ul li:hover ul {
+  display: block;
+  margin-top: 1rem;
+}
+
+.dropdown ul li ul li:hover {
+  background-color: #ff5e62;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown ul li {
+    position: relative;
+    flex: 1 1 100%;
+  }
+
+  .dropdown ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .dropdown ul li:hover ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ff5e62;
+    margin-top: 0;
+  }
+}
+
+/* End: Menu with Dropdown Children */
