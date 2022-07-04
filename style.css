@@ -75,3 +75,30 @@ nav ul a {
   }
 }
 /* End: Simple Menu */
+
+/* Start: Nav With Icons */
+.icons ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icons ul li {
+  flex: 1;
+}
+
+.icons ul li a {
+  display: flex;
+}
+
+.icons .icon {
+  font-size: 2rem;
+  flex: 0 0 3rem;
+}
+
+.icons .text span {
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* End: Nav with Icons */
